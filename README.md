@@ -1,4 +1,4 @@
-## A small but functional retro Apple-inspired modal
+## A small but functional React Modal
 
 ![logo](./public/modal.png)
 
