@@ -1,10 +1,10 @@
 import React from 'react'
+import Modal from 'standard-react-modal'
+import "standard-react-modal/dist/index.css"
 
-import { ExampleComponent } from 'standard-react-modal'
-import 'standard-react-modal/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (<Modal />)
 }
 
 export default App

@@ -1,30 +1,51 @@
-# standard-react-modal
+## A small but functional retro Apple-inspired modal
 
-> Made with create-react-library
+![logo](./public/modal.png)
 
-[![NPM](https://img.shields.io/npm/v/standard-react-modal.svg)](https://www.npmjs.com/package/standard-react-modal) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+### Install
 
-## Install
+Install using `npm install standard-react-modal`
 
-```bash
-npm install --save standard-react-modal
+### Usage
+
+In a React app, use the Modal components:
+`import { Modal } from 'standard-react-modal'`
+
+### Modal props
+
+| Name         | Description                                                                |
+| ------------ | -------------------------------------------------------------------------- |
+| text         | a string containing a text                                                 |
+
+
+### Make it as a component !
+
+- in your component folder, create a file for your modal that you will import later as it should be.
+
+- then, at the top of your component page
+
+`import React from "react";`
+
+`import { Modal } from "standard-react-modal";`
+
+- then, set the props :
+
 ```
 
-## Usage
+const yourText =
+    "The text would be placed here";
 
-```jsx
-import React, { Component } from 'react'
-
-import MyComponent from 'standard-react-modal'
-import 'standard-react-modal/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
 ```
 
-## License
+- then insert in your function the **Modal** 
 
-MIT © [MahavishnuT](https://github.com/MahavishnuT)
+```
+<Modal   
+    text={yourText}  
+        />
+```
+
+- don't forget to insert `onClick={handleModal}` in a button for exemple
+
+<Button>Submit</Button>
+

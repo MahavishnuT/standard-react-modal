@@ -4,6 +4,7 @@
   "description": "Made with create-react-library",
   "author": "MahavishnuT",
   "license": "MIT",
+  "homepage": "https://github.com/MahavishnuT/react-modal-standard.git",
   "repository": "MahavishnuT/standard-react-modal",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
@@ -11,13 +12,16 @@
   "engines": {
     "node": ">=10"
   },
+  "keywords": [
+    "react",
+    "react-component"
+  ],
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
     "prepare": "run-s build",
     "test": "run-s test:unit test:lint test:build",
     "test:build": "run-s build",
-    "test:lint": "eslint .",
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && npm install && npm run build",
