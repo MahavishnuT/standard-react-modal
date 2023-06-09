@@ -4,6 +4,7 @@
 
 ### Install
 
+Make sure to use React V16.0.0 or higher
 Install using `npm install standard-react-modal`
 
 ### Usage
